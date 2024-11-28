@@ -7,18 +7,18 @@ const def = {temperature : 0, conditions : "Cool"}
 
 const App = () => {
 
-  const[data, setData] = useState(def)
+  const[info, setInfo] = useState(def)
 
 
   useEffect(() => {
     setTimeout(() => {
-      setData({ temperature: 25, conditions: "Sunny" })
+      setInfo({ temperature: 25, conditions: "Sunny" })
     }, 1000)
   })
 
   return (
     <div>
-      <WeatherDisplay data={info} />
+      <WeatherDisplay info={info} />
     </div>
   )
 }
