@@ -4,7 +4,7 @@ const WeatherDisplay=(props)=>{
   const {info}=props
 
   const style={
-    color: info.temperature  20 ? "red" :"blue"  
+    color: info.temperature > 20 ? "red" :"blue"  
 };
 return (
         <div>
