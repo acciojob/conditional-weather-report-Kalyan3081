@@ -3,12 +3,12 @@ import React from 'react'
 const WeatherDisplay=(props)=>{
   const {info}=props
 
-  const style={
+  const styles={
     color: info.temperature > 20 ? "red" :"blue"  
 };
 return (
         <div>
-            <p>Temperature: <span style={tempStyle}>{info.temperature}</span></p>
+            <p>Temperature: <span style={styles}>{info.temperature}</span></p>
             <p>Conditions: {info.conditions}</p>
         </div>
     );
